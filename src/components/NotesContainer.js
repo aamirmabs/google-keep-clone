@@ -4,9 +4,15 @@ import DisplayNotes from "./DisplayNotes/DisplayNotes";
 import FilterNotes from "./FilterNotes/FilterNotes";
 import NotesMenu from "./NotesMenu/NotesMenu";
 
+import notesDB from "./notesDB";
 import "./NotesContainer.css";
 
 const NotesContainer = (props) => {
+  // state management
+  const [filteredNotes, setFilteredNotes] = useState(notesDB);
+
+  // event handling
+
   return (
     <div class="notes-app-container">
       <div className="header-container">
@@ -22,7 +28,7 @@ const NotesContainer = (props) => {
         <FilterNotes />
       </div>
       <div class="display-notes-container">
-        <DisplayNotes />
+        <DisplayNotes db={filteredNotes} />
       </div>
     </div>
   );
