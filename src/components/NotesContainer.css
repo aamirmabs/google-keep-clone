@@ -1,0 +1,30 @@
+.notes-app-container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header-container {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu-container {
+  grid-area: 2 / 1 / 5 / 2;
+  background-color: rgb(233, 233, 233);
+  min-height: 100%;
+}
+.add-notes-container {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: rgb(211, 211, 211);
+}
+.filter-notes-container {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: rgb(184, 184, 184);
+}
+.display-notes-container {
+  grid-area: 4 / 2 / 5 / 3;
+  background-color: rgb(165, 165, 165);
+}
