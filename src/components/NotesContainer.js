@@ -11,6 +11,8 @@ const NotesContainer = (props) => {
   // state management
   const [filteredNotes, setFilteredNotes] = useState(notesDB);
 
+  const [tagsArray, setTagsArray] = useState(notesDB.tags);
+
   // event handling
 
   return (
@@ -25,7 +27,7 @@ const NotesContainer = (props) => {
         <AddNote />
       </div>
       <div className="filter-notes-container">
-        <FilterNotes />
+        <FilterNotes tagsDB={tagsArray} resetTagsFilter={setTagsArray} />
       </div>
       <div className="display-notes-container">
         <DisplayNotes db={filteredNotes} />

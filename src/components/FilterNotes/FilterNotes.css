@@ -1,0 +1,132 @@
+.filter-notes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.filter-section-heading {
+  padding: 10px;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  margin: 5px;
+
+  text-align: center;
+  color: #4d4d4d;
+
+  background-color: rgb(228, 228, 228);
+  border: 0.25rem solid rgb(204, 204, 204);
+  border-radius: 1rem;
+
+  box-shadow: 0px 4px 10px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.tag:hover {
+  transition: all 0.2s 0s ease-in-out;
+  color: #000000;
+  box-shadow: 0px 10px 30px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#default-tag {
+  color: rgb(252, 109, 109);
+  background-color: #2c2c2c;
+  border: 0.25rem solid rgb(252, 109, 109);
+}
+
+#default-tag:hover {
+  color: #2c2c2c;
+  background-color: rgb(252, 109, 109);
+  border-color: #2c2c2c;
+}
+
+.tag-red {
+  background-color: var(--red);
+  border-radius: 1rem;
+}
+
+.tag-red:hover {
+  border-color: var(--red-border);
+}
+
+.tag-orange {
+  background-color: var(--orange);
+  border-radius: 1rem;
+}
+
+.tag-orange:hover {
+  border-color: var(--orange-border);
+}
+
+.tag-yellow {
+  background-color: var(--yellow);
+  border-radius: 1rem;
+}
+
+.tag-yellow:hover {
+  border-color: var(--yellow-border);
+}
+
+.tag-green {
+  background-color: var(--green);
+  border-radius: 1rem;
+}
+
+.tag-green:hover {
+  border-color: var(--green-border);
+}
+
+.tag-blue-green {
+  background-color: var(--blue-green);
+  border-radius: 1rem;
+}
+
+.tag-blue-green:hover {
+  border-color: var(--blue-green-border);
+}
+
+.tag-light-blue {
+  background-color: var(--light-blue);
+  border-radius: 1rem;
+}
+
+.tag-light-blue:hover {
+  border-color: var(--light-blue-border);
+}
+
+.tag-dark-blue {
+  background-color: var(--dark-blue);
+  border-radius: 1rem;
+}
+
+.tag-dark-blue:hover {
+  border-color: var(--dark-blue-border);
+}
+
+.tag-purple {
+  background-color: var(--purple);
+  border-radius: 1rem;
+}
+
+.tag-purple:hover {
+  border-color: var(--purple-border);
+}
+
+.tag-light-gray {
+  background-color: var(--light-gray);
+  border-radius: 1rem;
+}
+
+.tag-light-gray:hover {
+  border-color: var(--light-gray-border);
+}
+
+.tag-dark-gray {
+  background-color: var(--dark-gray);
+  border-radius: 1rem;
+}
+
+.tag-dark-gray:hover {
+  border-color: var(--dark-gray-border);
+}

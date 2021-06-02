@@ -2,13 +2,13 @@ let notesDB = {
   countTotal: 5,
   countActive: 4,
   tags: {
-    0: "tag0",
-    1: "tag1",
-    2: "tag2",
-    3: "tag3",
-    4: "tag4",
+    0: { tagName: "tag0", tagColor: "red" },
+    1: { tagName: "tag1", tagColor: "orange" },
+    2: { tagName: "tag2", tagColor: "yellow" },
+    3: { tagName: "tag3", tagColor: "green" },
+    4: { tagName: "tag4", tagColor: "light-blue" },
   },
-  tagColors: [
+  tagColorPalette: [
     "red",
     "orange",
     "yellow",
