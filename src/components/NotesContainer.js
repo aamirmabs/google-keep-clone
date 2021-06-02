@@ -4,7 +4,7 @@ import DisplayNotes from "./DisplayNotes/DisplayNotes";
 import FilterNotes from "./FilterNotes/FilterNotes";
 import NotesMenu from "./NotesMenu/NotesMenu";
 
-import notesDB from "./notesDB";
+import notesDB from "./NotesDB";
 import "./NotesContainer.css";
 
 const NotesContainer = (props) => {
@@ -14,20 +14,20 @@ const NotesContainer = (props) => {
   // event handling
 
   return (
-    <div class="notes-app-container">
+    <div className="notes-app-container">
       <div className="header-container">
         <h1>Google Keep Clone</h1>
       </div>
-      <div class="menu-container">
+      <div className="menu-container">
         <NotesMenu />
       </div>
-      <div class="add-notes-container">
+      <div className="add-notes-container">
         <AddNote />
       </div>
-      <div class="filter-notes-container">
+      <div className="filter-notes-container">
         <FilterNotes />
       </div>
-      <div class="display-notes-container">
+      <div className="display-notes-container">
         <DisplayNotes db={filteredNotes} />
       </div>
     </div>

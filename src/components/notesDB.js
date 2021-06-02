@@ -8,6 +8,18 @@ let notesDB = {
     3: "tag3",
     4: "tag4",
   },
+  tagColors: [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue-green",
+    "light-blue",
+    "dark-blue",
+    "purple",
+    "light-gray",
+    "dark-gray",
+  ],
   notes: {
     n001: {
       title: "1 - Lorem ipsum",

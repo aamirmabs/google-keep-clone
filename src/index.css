@@ -1,3 +1,29 @@
+:root {
+  --main-bg-color: coral;
+
+  /* color palette for tags */
+  --red: #fc5c65;
+  --red-border: #eb3b5a;
+  --orange: #fd9644;
+  --orange-border: #fa8231;
+  --yellow: #fed330;
+  --yellow-border: #f7b731;
+  --green: #26de81;
+  --green-border: #20bf6b;
+  --blue-green: #2bcbba;
+  --blue-green-border: #0fb9b1;
+  --light-blue: #45aaf2;
+  --light-blue-border: #2d98da;
+  --dark-blue: #4b7bec;
+  --dark-blue-border: #3867d6;
+  --purple: #a55eea;
+  --purple-border: #8854d0;
+  --light-gray: #d1d8e0;
+  --light-gray-border: #a5b1c2;
+  --dark-gray: #778ca3;
+  --dark-gray-border: #4b6584;
+}
+
 html {
   height: 100%;
 }
