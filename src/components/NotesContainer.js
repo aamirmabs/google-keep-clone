@@ -9,9 +9,26 @@ import "./NotesContainer.css";
 
 const NotesContainer = (props) => {
   // state management
-  const [filteredNotes, setFilteredNotes] = useState(notesDB);
-
+  const [notes, setNotes] = useState(notesDB);
+  const [filteredNotes, setFilteredNotes] = useState(notesDB.notes);
   const [tagsArray, setTagsArray] = useState(notesDB.tags);
+
+  // event handlers
+  const handleFilterTagClick = (e) => {
+    // detect which filter is clicked
+    console.log("Clicked");
+
+    // generate a dynamic list of filtered notes
+    // setFilteredNotes();
+  };
+
+  const getFilteredTag = (tag) => {
+    if (tag === "All") {
+      console.log("Tag 'All' clicked - Display all the notes");
+    } else {
+      console.log(`Tag '${tag}' clicked - Fetch appropriate notes and display`);
+    }
+  };
 
   // event handling
 
@@ -27,7 +44,11 @@ const NotesContainer = (props) => {
         <AddNote />
       </div>
       <div className="filter-notes-container">
-        <FilterNotes tagsDB={tagsArray} resetTagsFilter={setTagsArray} />
+        <FilterNotes
+          filteredTag={getFilteredTag}
+          tagsDB={tagsArray}
+          resetTagsFilter={setTagsArray}
+        />
       </div>
       <div className="display-notes-container">
         <DisplayNotes db={filteredNotes} />

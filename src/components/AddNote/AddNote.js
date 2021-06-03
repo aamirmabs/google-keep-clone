@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./AddNote.css";
 
 const AddNote = (props) => {
-  return (
-    <div>
-      <h1>Add Note Component</h1>
-    </div>
-  );
+  //
+
+  return <form action=""></form>;
 };
 
 export default AddNote;

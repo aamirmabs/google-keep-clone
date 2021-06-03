@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Note from "./Note";
 
 import "./DisplayNotes.css";
 
 const DisplayNotes = (props) => {
-  const notes = props.db.notes;
+  const notes = props.db;
 
   // generating the HTML for notes
   let notesHTML = [];

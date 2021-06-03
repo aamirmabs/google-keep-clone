@@ -1,15 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import FilterTag from "./FilterTag";
 
 import "./FilterNotes.css";
 
 function FilterNotes(props) {
-  // <FilterNotes tagsDB={tagsArray} resetTagsFilter={setTagsArray} />
+  //   <FilterNotes
+  //   handleClick={handleFilterNotes}
+  //   tagsDB={tagsArray}
+  //   resetTagsFilter={setTagsArray}
+  // />
+
+  // event handlers
+
+  const handleFilteredTagClick = (e) => {
+    // props.filteredTag(e.target);
+    console.log("clicked");
+    props.filteredTag(e.target.innerHTML);
+  };
 
   // creating an array of tags and their backgrounds
   const tags = props.tagsDB;
   const tagsArray = [
-    <FilterTag key="default" title="All" color={false} id="default-tag" />,
+    <FilterTag
+      key="default"
+      title="All"
+      color={false}
+      id="default-tag"
+      filteredTag={props.filteredTag}
+    />,
   ];
   const tagsTitleArray = [];
   const tagsColorsArray = [];
@@ -26,6 +44,7 @@ function FilterNotes(props) {
         key={key}
         title={tagTitle}
         color={tagColor ? tagColor : false}
+        filteredTag={props.filteredTag}
       />
     );
   }

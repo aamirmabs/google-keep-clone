@@ -1,14 +1,24 @@
 import React from "react";
 
 function FilterTag(props) {
-  // <FilterTag title={tagTitle} color={tagColor} />
+  // <FilterTag
+  //   key={key}
+  //   title={tagTitle}
+  //   color={tagColor ? tagColor : false}
+  //   filteredTag={props.filteredTag}
+  // />;
 
   const tagClassName = props.color ? `tag tag-${props.color}` : `tag`;
-  const id = props.id ? props.id : ``;
+  const idName = props.id ? props.id : undefined;
   // console.log(tagClassName);
 
+  const handleFilteredTagClick = (e) => {
+    // sending the tag name upwards to higher components
+    props.filteredTag(e.target.innerHTML);
+  };
+
   return (
-    <span className={tagClassName} id={id}>
+    <span onClick={handleFilteredTagClick} className={tagClassName} id={idName}>
       {props.title}
     </span>
   );
