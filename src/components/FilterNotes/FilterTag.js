@@ -12,13 +12,13 @@ function FilterTag(props) {
   const idName = props.id ? props.id : undefined;
   // console.log(tagClassName);
 
-  const handleFilteredTagClick = (e) => {
+  const handleTagClick = (e) => {
     // sending the tag name upwards to higher components
     props.filteredTag(e.target.innerHTML);
   };
 
   return (
-    <span onClick={handleFilteredTagClick} className={tagClassName} id={idName}>
+    <span onClick={handleTagClick} className={tagClassName} id={idName}>
       {props.title}
     </span>
   );

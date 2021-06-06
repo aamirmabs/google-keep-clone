@@ -24,7 +24,7 @@ function FilterNotes(props) {
     <FilterTag
       key="default"
       title="All"
-      color={false}
+      color={undefined}
       id="default-tag"
       filteredTag={props.filteredTag}
     />,

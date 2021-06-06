@@ -11,7 +11,7 @@ const NotesContainer = (props) => {
   // state management
   const [notes, setNotes] = useState(notesDB);
   const [filteredNotes, setFilteredNotes] = useState(notesDB.notes);
-  const [tagsArray, setTagsArray] = useState(notesDB.tags);
+  const [tagsObject, setTagsObject] = useState(notesDB.tags);
 
   // event handlers
   const handleFilterTagClick = (e) => {
@@ -41,13 +41,13 @@ const NotesContainer = (props) => {
         <NotesMenu />
       </div>
       <div className="add-notes-container">
-        <AddNote />
+        <AddNote tagsObject={tagsObject} setTagsObject={setTagsObject} />
       </div>
       <div className="filter-notes-container">
         <FilterNotes
           filteredTag={getFilteredTag}
-          tagsDB={tagsArray}
-          resetTagsFilter={setTagsArray}
+          tagsDB={tagsObject}
+          resetTagsFilter={setTagsObject}
         />
       </div>
       <div className="display-notes-container">
