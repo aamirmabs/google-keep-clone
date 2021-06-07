@@ -40,3 +40,15 @@ body {
   background-color: cornsilk;
   margin: 0;
 }
+
+button {
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  align-self: center;
+  box-shadow: 0px 4px 10px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+button:hover {
+  transition: all 0.2s 0s ease-in-out;
+  box-shadow: 0px 10px 30px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}

@@ -23,33 +23,38 @@ let notesDB = {
   notes: {
     n001: {
       title: "1 - Lorem ipsum",
-      body: "lorem ipsum dolor sit emit",
+      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia totam facilis ab nam, repudiandae sequi voluptatum nemo, exercitationem amet maiores necessitatibus libero velit suscipit excepturi itaque quaerat. Blanditiis, odio maiores! ",
       isActive: true,
       tagNo: 1,
+      date: "01-12-2020",
     },
     n002: {
       title: "2 - Lorem ipsum",
       body: "lorem ipsum dolor sit emit",
       isActive: true,
       tagNo: 2,
+      date: "01-12-2020",
     },
     n003: {
       title: "3 - Lorem ipsum",
       body: "lorem ipsum dolor sit emit",
       isActive: true,
       tagNo: 3,
+      date: "01-12-2020",
     },
     n004: {
       title: "4 - Lorem ipsum",
       body: "lorem ipsum dolor sit emit",
       isActive: false,
       tagNo: 3,
+      date: "01-12-2020",
     },
     n005: {
       title: "5 - Lorem ipsum",
       body: "lorem ipsum dolor sit emit",
       isActive: true,
       tagNo: 4,
+      date: "01-12-2020",
     },
   },
 };
