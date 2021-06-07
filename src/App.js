@@ -1,14 +1,9 @@
-import AddNote from "./components/AddNote/AddNote";
-import DisplayNotes from "./components/DisplayNotes/DisplayNotes";
+import NotesContainer from "./components/NotesContainer";
+
+import "./css-reset.css";
 
 function App() {
-  return (
-    <div>
-      <h1>Google Keep Clone</h1>
-      <AddNote />
-      <DisplayNotes />
-    </div>
-  );
+  return <NotesContainer />;
 }
 
 export default App;

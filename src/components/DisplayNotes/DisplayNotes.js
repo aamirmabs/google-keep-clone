@@ -1,13 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
+import Note from "./Note";
 
 import "./DisplayNotes.css";
 
 const DisplayNotes = (props) => {
-  return (
-    <div>
-      <h1>Display Notes Component</h1>
-    </div>
-  );
+  const notes = props.db;
+
+  // generating the HTML for notes
+  let notesHTML = [];
+
+  for (const key of Object.keys(notes)) {
+    // console.log(`${key} : ${notes[key]}`);
+    const note = notes[key];
+
+    const newHTML = <Note key={key} note={note} />;
+
+    notesHTML.push(newHTML);
+  }
+
+  return <div className="notes-grid">{notesHTML}</div>;
 };
 
 export default DisplayNotes;

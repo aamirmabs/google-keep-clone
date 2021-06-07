@@ -1,4 +1,35 @@
+:root {
+  --main-bg-color: coral;
+
+  /* color palette for tags */
+  --red: #fc5c65;
+  --red-border: #eb3b5a;
+  --orange: #fd9644;
+  --orange-border: #fa8231;
+  --yellow: #fed330;
+  --yellow-border: #f7b731;
+  --green: #26de81;
+  --green-border: #20bf6b;
+  --blue-green: #2bcbba;
+  --blue-green-border: #0fb9b1;
+  --light-blue: #45aaf2;
+  --light-blue-border: #2d98da;
+  --dark-blue: #4b7bec;
+  --dark-blue-border: #3867d6;
+  --purple: #a55eea;
+  --purple-border: #8854d0;
+  --light-gray: #d1d8e0;
+  --light-gray-border: #a5b1c2;
+  --dark-gray: #778ca3;
+  --dark-gray-border: #4b6584;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -7,4 +38,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: cornsilk;
+  margin: 0;
+}
+
+button {
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  align-self: center;
+  box-shadow: 0px 4px 10px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+button:hover {
+  transition: all 0.2s 0s ease-in-out;
+  box-shadow: 0px 10px 30px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }

@@ -1,3 +1,146 @@
-* {
-  background-color: gainsboro;
+.notes-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.note-card {
+  background-color: rgb(209, 225, 255);
+  width: 30%;
+  height: 150px;
+
+  margin: 5px;
+  border: 5px #c0c0c0 solid;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+
+  box-shadow: 0px 4px 10px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.note-card:hover {
+  transition: all 0.2s 0s ease-in-out;
+  border: 5px #0054a3 solid;
+  box-shadow: 0px 10px 30px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.note-card__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 2px 5px;
+}
+
+.note-card__body {
+  font-weight: 200;
+
+  flex-grow: 1;
+  padding: 2px 5px;
+}
+
+.note-card__footer {
+  background-color: rgb(186, 208, 250);
+  /* padding: 5px 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  color: #868686;
+}
+.note-card-footer__datetime {
+  padding: 2px 5px;
+}
+.note-card-footer__tag {
+  padding: 2px 5px;
+}
+
+.note-modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.note-modal__hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fefefe;
+
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 1rem;
+  max-width: 80%; /* Could be more or less, depending on screen size */
+
+  position: relative;
+}
+
+.close {
+  color: var(--dark-blue);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--dark-blue-border);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s 0s ease-in-out;
+}
+
+.note-modal__heading {
+  background-color: rgb(224, 224, 224);
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  padding: 1rem;
+  margin-top: -1rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
+
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.note-modal__details {
+  background-color: rgb(240, 240, 240);
+
+  padding: 0.5rem 1rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
+
+  font-size: 0.9em;
+}
+
+.note-modal__body {
+  font-size: 1.25rem;
+  padding: 0.5rem 0rem;
+}
+
+.note-modal__footer {
+  font: inherit;
 }
